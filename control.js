@@ -4,17 +4,16 @@ var num1 = parseInt(req.body.num1)
 var num2 = parseInt(req.body.num2)
 var result;
 var operacoes = req.body.operacoes;
-
 if(operacoes == 'soma'){
 result = num1 + num2;
 }else
 if(operacoes == 'subtracao'){
 result = num1 - num2;
 }else
-if(operacoes == 'multi'){
+if(operacoes == 'multip'){
 result = num1 * num2;
 }else
-if(operacoes == 'div'){
+if(operacoes == 'divi'){
 result = num1 / num2;
 }
 res.render("conta/list.ejs", {result: result});
@@ -25,4 +24,3 @@ res.render("conta/add.ejs", {});
 module.exports = {
 add,
 abreAdd,
- 
